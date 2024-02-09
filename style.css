@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-wrap: hidden;
+
+}
+
+article {
+    background-image: url("./images/image-hero-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: 95% top;
+}
+/* NAVBAR SECTION*/
+
+a.navbar-brand {
+    text-transform: uppercase;
+    margin-left: 40px;
+    font-family: "Epilogue";
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+li.nav-item {
+    font-family: 'Epilogue';
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+ul.dropdown-menu {
+    width: fit-content;
+   
+}
+
+img.icon {
+    position: relative;
+    bottom: 25px;
+}
+
+a.dropdown-item {
+    margin-left: 10px;
+}
+ 
+button#login,button#sign {
+    margin-left: 60px;
+    position: relative;
+    left: 40%;
+    background-color: white;
+    border: none;
+    font-family: 'Epilogue';
+    width: fit-content;
+}
+
+button#sign {
+    border:2px solid;
+    border-radius: 12px;
+    border-color: hsl(0, 0%, 41%);
+    
+
+}
+
+button#sign:hover {
+    background-color: hsl(0, 0%, 8%);
+    transition: 0.1s ease-in;
+    color: hsl(0, 0%, 98%);
+}
+
+/* THE CONTENT SECTION */
+h1#display-4 {
+    font-family:'Epilogue' ;
+    margin-top: 80px;
+    font-weight: bolder;
+    font-size: 80px;
+    cursor: pointer;
+}
+
+p#lead {
+    font-family: "Epilogue";
+    margin-bottom: 40px;
+    margin-top:40px;
+    font-size: 20px;
+}
+
+a#more {
+    font-family: "Epilogue";
+   background-color: hsl(0, 0%, 8%);
+   border: 2px solid;
+   font-size: 20px;
+   margin-bottom: 80px;
+   width: fit-content;
+}
+
+a#more:hover {
+    background-color: hsl(0, 0%, 98%);
+    transition: 0.2s ease-in;
+    color: hsl(0, 0%, 8%);
+}
+
+img.client {
+    width: 100px;
+    margin: 10px;
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 40px;
+    text-transform: capitalize;
+}
+/* ANIMATION */
+
+.animate__animated.animate__backInDown, 
+.animate__animated.animate__backInLeft{
+    --animate-duration: 1.5s ;
+  }
+
+
+/* TABLET AND LAPTOP VIEW SECTION */
+
+@media screen and (max-width:950px){
+   article {
+    background: url("./images/image-hero-mobile.png");
+    background-size: cover;
+    background-size: 90%;
+    background-position: 20% top;
+    background-position-x: hidden;
+    background-repeat: no-repeat;
+   }
+
+h1#display-4,p#lead,a#more,img.client,.attribution{
+    text-align: center;
+    position: relative;
+    top: 600px;
+}
+
+a#more {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+img.client {
+    align-items: center;
+    width: 80px;
+    flex-direction: column-reverse;
+    display: block;
+    justify-content: center;
+    float:left;
+    left:20.5%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.attribution {
+    clear: both;
+   
+}
+}
+
+
+/* MOBILE VIEW SECTION */
+
+@media screen and (max-width:400px) {
+    h1#display-4,p#lead,a#more,img.client,.attribution{
+        text-align: center;
+        position: relative;
+        top: 300px;
+    }
+
+    img.client {
+        align-items: center;
+        width: 50px;
+        flex-direction: column-reverse;
+        display: block;
+        justify-content: center;
+        float:left;
+        left:5.5%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}
