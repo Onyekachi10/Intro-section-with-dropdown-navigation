@@ -9,7 +9,7 @@
 article {
     background-image: url("./images/image-hero-desktop.png");
     background-repeat: no-repeat;
-    background-size: 300px;
+    background-size: screen;
     background-position: 95% top;
 }
 /* NAVBAR SECTION*/
